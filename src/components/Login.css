@@ -1,0 +1,257 @@
+body{
+    background-color: #EBF3FF;
+}
+
+.outer{
+    background-color: #EBF3FF;
+}
+
+.logo{
+    position: absolute;
+    left: 40.86%;
+    right: 37.24%;
+    top: 5.37%;
+    bottom: 87.16%;
+    width: 19%;
+    height: 13%;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+
+.box{
+    position: absolute;
+    left: 35.14%;
+    right: 35.14%;
+    top: 21.31%;
+    bottom: 45.67%;
+    background: #EBF3FF;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 4px 4px lightgray;
+    height: 75%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    flex: 50%;
+  }
+
+.login1{
+    /* left: 14.93%;
+right: 57.64%;
+top: 31.35%;
+bottom: 62.11%; */
+width: 100%;
+    padding-left: 10%;
+    padding-top: 15%;
+    font-family: 'Pridi', serif;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.phone{
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+.email{
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+.fields{
+    text-align: center;
+    background: #EBF3FF;
+    box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.7), inset 8px 8px 16px rgba(180, 193, 213, 0.7);
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    width: 90%;
+    height: 50%;
+}
+
+.input-icons1 i {
+    position: absolute;
+    font-size:x-large;
+
+}
+  
+.input-icons1 {
+    padding-left: 15%;
+    padding-top: 5%;
+    width: 100%;
+}
+  
+.icon {
+    padding: 1.5%;
+    color: #2F3843;
+    min-width: 1.75rem;
+    text-align: center;
+}
+/* .ill1{
+   
+    left: 50%;
+    right: 11.11%;
+    top: 49.1%;
+    bottom: 16.21%;
+    width: 95%;
+    height: 90%;
+    padding-top: 15%;
+    padding-left: 15%;
+} */
+.ill1{
+    position: relative;
+    left: 10%;
+    right: 11.11%;
+    top:10%;
+    width: 70%;
+    height: 70%;
+    padding-top: 15%;
+    padding-left: 15%;
+}
+.remember{
+    padding-left: 25%;
+    height: 10%;
+    padding-top: 3%;
+    font-family: 'Poppins';
+}
+
+.check{
+    border-radius: 100%;
+}
+
+.loginButton{
+    padding-left: 30%;
+    padding-top: 3%;
+}
+
+.loginButton a{
+    text-decoration: none;
+    color: #2F3843;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.cont1{
+position: absolute;
+left: 15%;
+top: 59%;
+height: 8%;
+background: darkorange;
+box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+border-radius: 15px;
+color: #2F3843;
+border: 0;
+outline: 0;
+padding: 0.75rem;
+width: 70%;
+}
+
+.lo-link{
+    position: absolute;
+    top: 83%;
+    left: 20%;
+}
+.google{
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    height: 8%;
+    background: skyblue;
+box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+border-radius: 15px;
+border: 0;
+outline: 0;
+padding: 0.75rem;
+width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        left: 30.67%;
+        right: 30.67%;
+        top: 2.34%;
+        width: 47%;
+        height: 8%;
+    }
+    .box{
+        left: 10.14%;
+        right: 10.14%;
+        top: 15%;
+        background: #EBF3FF;
+        border-radius: 0px 25px 25px 25px;
+        box-shadow: 3px 3px 4px 3px lightgray;
+        height: 75%;
+    }
+    .login1{
+        padding-left: 12.93%;
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .column{
+        width: 100%;
+    }
+    .c{
+        display: none;
+    }
+    .fields{
+        text-align: center;
+        background: #EBF3FF;
+        box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.7), inset 8px 8px 16px rgba(180, 193, 213, 0.7);
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        padding: 1rem;
+        width: 90%;
+        height: 50%;
+    }
+    
+    .input-icons1 i {
+        position: absolute;
+        /* top:5%; */
+        font-size:xx-large;
+        margin-top: 1.5%;
+
+    }
+      
+    .input-icons1 {
+        padding-left: 20%;
+        padding-top: 5%;
+        width: 100%;
+    }
+      
+    .icon {
+        padding: 1.5%;
+        color: #2F3843;
+        min-width: 1.75rem;
+        text-align: center;
+    }
+    .ill1{
+        display: none;
+    }
+    /* .icon {
+        padding: 5%;
+        color: #2F3843;
+        min-width: 1.75rem;
+        text-align: center;
+    } */
+  }

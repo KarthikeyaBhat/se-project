@@ -1,0 +1,168 @@
+.b1-logo {
+    position: absolute;
+    left: 41%;
+    right: 37.24%;
+    top: 3%;
+    bottom: 87.16%;
+    width: 19%;
+    height: 10%;
+    font-weight: 800;
+}
+.b1-logo:hover{
+    cursor: pointer;
+}
+
+.logout1 {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    background: darkorange;
+    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+    border-radius: 15px;
+    color: #2F3843;
+    border: 0;
+    outline: 0;
+    padding: 0.75rem;
+    width: 6%;
+}
+.Gtc {
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    background: darkorange;
+    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+    border-radius: 15px;
+    color: #2F3843;
+    border: 0;
+    outline: 0;
+    padding: 0.75rem;
+    width: 8%;
+}
+
+.vi-p1{
+    position: absolute;
+left: 5%;
+right: 78.33%;
+top: 16.15%;
+bottom: 80.92%;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #2F3843;
+}
+.vi-p2{
+    position: absolute;
+left: 5%;
+right: 78.33%;
+top: 65%;
+bottom: 40.92%;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #2F3843;
+}
+.vi-p3{
+    position: absolute;
+left: 5%;
+right: 78.33%;
+top: 110%;
+bottom: 40.92%;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #2F3843;
+}
+.vi-p4{
+    position: absolute;
+left: 5%;
+right: 78.33%;
+top: 160%;
+bottom: 40.92%;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #2F3843;
+}
+.vi-rp{
+    position: absolute;
+left: 5%;
+right: 5%;
+top: 15%;
+bottom: 45%;
+}
+.vi-rp2{
+    position: absolute;
+    top: 21%;
+    left: 0.005%;
+    right: 0%;
+    bottom: 0%;
+    height: 100%;
+}
+.vi-rpdp{
+    position: absolute;
+left: 5%;
+right: 5%;
+top: 60%;
+bottom: 0%;
+}
+.vi-rp2dp{
+    position: absolute;
+    top: 21%;
+    left: 0.005%;
+    right: 0%;
+    bottom: 0%;
+    height: 100%;
+}
+.vi-rpcs{
+    position: absolute;
+left: 5%;
+right: 5%;
+top: 110%;
+bottom: -50%;
+}
+.vi-rp2cs{
+    position: absolute;
+    top: 21%;
+    left: 0.005%;
+    right: 0%;
+    bottom: 0%;
+    height: 100%;
+}
+.vi-rpm{
+    position: absolute;
+left: 5%;
+right: 5%;
+top: 155%;
+bottom: -95%;
+}
+.vi-rp2m{
+    position: absolute;
+    top: 21%;
+    left: 0.005%;
+    right: 0%;
+    bottom: 0%;
+    height: 100%;
+}
+.vi-card{
+    height: 100%;
+}

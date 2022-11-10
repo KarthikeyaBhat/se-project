@@ -1,0 +1,249 @@
+.H-img1{
+    position: absolute;
+    left: 42.1%;
+    right: 27.24%;
+    top: 5.08%;
+    bottom: 76.08%;
+}
+.H-img1:hover{
+    cursor: pointer;
+}
+.H-img2{
+    position: absolute;
+    left: 8.27%;
+    right: 58.91%;
+    top: 32.41%;
+    bottom: 13.19%;
+    width: 32.78%;
+    height: 54.4%;
+}
+
+.H-p1{
+    /* position: absolute;
+    left: 66%;
+    right: 15.15%;
+    top: 29.77%;
+    bottom: 64.96%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    /* identical to box height
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #2F3843;
+ */
+ position: absolute;
+left: 65%;
+right: 5.63%;
+top: 32%;
+bottom: 62.32%;
+font-style:normal;
+font-weight: 400;
+font-size: 2vw;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #2F3843;
+
+}
+
+.H-encl{
+    flex-wrap: wrap;
+    flex: 50%;
+}
+.H-p2{
+    /* position: absolute;
+    left: 58.86%;
+    right: 9.59%;
+    top: 41.88%;
+    bottom: 52.56%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #2F3843; */
+    position: absolute;
+left: 61.57%;
+right: 12.09%;
+top: 47%;
+bottom: 53.53%;
+font-style: normal;
+font-weight: 400;
+font-size: 1.2vw;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2F3843;
+}
+
+.H-button{
+    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+    border-radius: 15px;
+    border-color: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2F3843;
+}
+.H-btn1{
+    position: absolute;
+    left: 64.49%;
+    right: 15.15%;
+    top: 56%;
+    bottom: 37%;
+    background:darkorange;
+
+    
+}
+
+.H-btn2{
+    position: absolute;
+    left: 64.49%;
+    right: 15.15%;
+    top: 66%;
+    bottom: 27%;
+    background: #EBF3FF;
+}
+
+.H-vl{
+    border-left: 4px solid darkorange;
+    position: absolute;
+    left: 50%;
+    right: 2.78%;
+    top: 23.92%;
+    bottom: 76.08%;
+    width: 0%;
+    height: 66.4%;
+}
+
+.H-txt{
+    text-decoration: none;
+    color: #2F3843;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #2F3843;
+}
+
+@media screen and (max-width: 500px) {
+    .H-img1{
+        position: absolute;
+        width: 224px;
+        height: 137px;
+        left: 75px;
+        top: -54px;
+        background: #EBF3FF;
+        box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #B4C1D5;
+        border-radius: 32px;
+    }
+    .H-img2{
+        position: absolute;
+        width: 328px;
+        height: 387px;
+        left: 23px;
+        top: 105px;
+    }
+    .H-p1{
+        position: absolute;
+        width: 163px;
+        height: 30px;
+        left: 105px;
+        top: 507px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+
+        color: #2F3843;
+    }
+    .H-p2{
+        position: absolute;
+        width: 279px;
+        height: 57px;
+        left: 49px;
+        top: 543px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+
+        color: #2F3843;
+
+    }
+    .H-button{
+        box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+        border-radius: 15px;
+        border-color: transparent;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-transform: capitalize;
+        color: #2F3843;
+    }
+    .H-btn1{
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        left: 63px;
+        top: 634px;
+        background: #B58BFF;
+    }
+    .H-btn2{
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        left: 63px;
+        top: 712px;
+        background: #EBF3FF;
+    }
+    .H-txt{
+        text-decoration: none;
+        color: #2F3843;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #2F3843;
+    }/* 
+    .H-v1{
+        position: absolute;
+        left: 0%;
+        right: 100%;
+        top: 0%;
+        bottom: 100%;
+        display: none !important;
+        border-left: transparent;
+        width: 0%;
+        height: 0%;
+    } */
+}

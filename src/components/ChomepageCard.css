@@ -1,0 +1,149 @@
+.ic-outer{
+    position: absolute;
+width: 220px;
+height: 214px;
+background: #EBF3FF;
+box-shadow: -12px -12px 24px rgba(255, 255, 255, 0.7), 12px 12px 24px rgba(180, 193, 213, 0.7);
+border-radius: 32px;
+}
+
+.ic-pimage{
+    position: absolute;
+width: 32.89px;
+height: 31.31px;
+left: 10%;
+top: 8%;
+border-radius: 16px;
+}
+.ic-username{
+    position: absolute;
+width: 122.41px;
+height: 36.53px;
+left: 10%;
+top: 5%;
+font-style: normal;
+font-weight: 600;
+font-size: 1em;
+
+color: #000000;
+}
+
+.ic-inner{
+    position: absolute;
+width: 93%;
+height: 55%;
+left: 1%;
+top: 18%;
+border-radius: 26.0947px;
+}
+
+.ic-post{
+    position: absolute;
+width: 100%;
+height: 100%;
+left: 2%;
+top: 12%;
+border-radius: 26.0947px;
+}
+
+.ic-footer{
+    position: absolute;
+width: 93%;
+height: 15%;
+left: 4%;
+top: 81%;
+backdrop-filter: blur(8.69823px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 0px 0px 26.0947px 26.0947px;
+}
+.chCard-qt{
+    position: absolute;
+left: 45%;
+top: 0%;
+border-radius: 1em;
+width: 40%;
+height: 17%;
+margin: 1rem;
+padding: 1%;
+z-index: 1;
+box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.7), inset 8px 8px 16px rgba(180, 193, 213, 0.7);
+border: 0;
+outline: 0;
+
+}
+
+.chATC{
+    position: absolute;
+width: 60%;
+height: 80%;
+left: 30%;
+top: 2%;
+border-radius: 1em;
+background-color: darkorange;
+box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px #C8B4D5;
+border-color: transparent;
+}
+.ic-commentCount{
+    position: absolute;
+width: 13.05px;
+height: 19.14px;
+left: 52.19px;
+top: 11.31px;
+font-style: normal;
+font-weight: 600;
+font-size: 11.3077px;
+line-height: 17px;
+
+
+color: #FFFFFF;
+}
+.form__inputchc{
+    position: absolute;
+left: 0%;
+top: 0%;
+border-radius: 1em;
+width: 100%;
+height: 100%;
+padding: 20%;
+z-index: 1;
+background-color: transparent;
+border: 0;
+outline: 0;
+
+
+}
+.ic-likes{
+    position: absolute;
+width: 25.22px;
+height: 25.22px;
+left: 69.59px;
+top: 7.83px;
+}
+
+.ic-likesCount{
+    position: absolute;
+width: 18px;
+height: 17px;
+left: 99.16px;
+top: 11.31px;
+font-style: normal;
+font-weight: 600;
+font-size: 11.3077px;
+line-height: 17px;
+color: #FFFFFF;
+
+}
+.ic-message{
+    position: absolute;
+width: 18.27px;
+height: 18.27px;
+left: 239.2px;
+top: 10.44px;
+}
+.ic-saved{
+    position: absolute;
+width: 17.4px;
+height: 17.4px;
+left: 273.12px;
+top: 10.44px;
+}

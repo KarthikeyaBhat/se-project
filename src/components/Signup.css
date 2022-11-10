@@ -1,0 +1,380 @@
+/* .img1{
+    position: absolute;
+    left: 27.1%;
+    right: 27.24%;
+    top: 5.08%;
+    bottom: 76.08%;
+    width: 45.6%;
+    height: 18.9%;
+} */
+
+
+.logo {
+    position: absolute;
+    left: 40.86%;
+    right: 37.24%;
+    top: 3%;
+    bottom: 87.16%;
+    width: 19%;
+    height: 10%;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.brand_user {
+    position: absolute;
+    width: 10%;
+    height: 7%;
+    left: 10.14%;
+    top: 15%;
+
+    background: #EBF3FF;
+    border-radius: 25px 25px 0px 0px;
+    border: none;
+    outline: none;
+    /* box-shadow: 3px 3px 4px 3px lightgray; */
+
+}
+
+.influencer_user {
+    position: absolute;
+    width: 10%;
+    height: 7%;
+    left: 20.34%;
+    top: 15%;
+
+    background: #EBF3FF;
+    border-radius: 25px 25px 0px 0px;
+    /* border-color: #B58BFF; */
+    border: none;
+    outline: none;
+    /* box-shadow: 3px 3px 4px 3px lightgray; */
+
+}
+
+button:active,
+button:focus {
+    outline: none !important;
+    box-shadow: 0 0 4px 3px lightgray;
+
+}
+
+.box2 {
+    position: absolute;
+    left: 20.14%;
+    right: 20.14%;
+    top: 15%;
+    bottom: 0%;
+    background: #EBF3FF;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 4px 4px lightgray;
+    height: 70%;
+    bottom: 10%;
+    /* margin-bottom: 10%; */
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.column {
+    flex: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.form-body {
+    position: absolute;
+    width: 80%;
+    /* height: 100%; */
+    left: 8%;
+    top: 5%;
+    bottom: 10%;
+}
+
+.sp-link{
+    position: absolute;
+    top: 70%;
+    left: 1%;
+}
+.brandname,
+.email1,
+.password,
+.confirm-password,
+.influencername {
+    position: relative;
+    background: #EBF3FF;
+    box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.7), inset 8px 8px 16px rgba(180, 193, 213, 0.7);
+    border-radius: 15px;
+    width: 40%;
+    height: 12%;
+    margin: 1rem;
+
+}
+.address{
+    position: absolute;
+    left: 50.6%;
+    top: 0%;
+    bottom: 56.5%;
+    box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.7), inset 8px 8px 16px rgba(180, 193, 213, 0.7);
+    border-radius: 15px;
+    width: 50%;
+    height: 40%;
+    margin: 1rem;
+    padding: 1%;
+}
+.sp-phone{
+    position: absolute;
+    left: 50.6%;
+    top: 50%;
+    bottom: 56.5%;
+    box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.7), inset 8px 8px 16px rgba(180, 193, 213, 0.7);
+    border-radius: 15px;
+    width: 50%;
+    height: 12%;
+    margin: 1rem;
+    padding: 1%;
+}
+.form__input {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    background: none;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    margin-left: 2%;
+    padding: 2%;
+    border: none;
+    outline: none;
+    left: 10%;
+
+
+}
+.form__input1 {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    background: none;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    margin-left: 2%;
+    padding: 2%;
+    border: none;
+    outline: none;
+    left: 10%;
+
+
+}
+.form__input::-moz-focus-inner,
+.form__input::-moz-focus-outer {
+    outline: none;
+    border: none;
+}
+.form__input1::-moz-focus-inner,
+.form__input1::-moz-focus-outer {
+    outline: none;
+    border: none;
+}
+
+.icon1 {
+    position: absolute;
+    margin-left: 15px;
+    top: 30%;
+}
+
+.form__input::placeholder {
+    padding-left: 30px;
+    font-weight: bold;
+}
+.form__input1::placeholder {
+    padding-left: 1px;
+    font-weight: bold;
+}
+
+.btn-register {
+    position: absolute;
+    height: 10%;
+    width: 70%;
+    left: 14%;
+    top: 81%;
+    border-radius: 0px;
+    background: darkorange;
+    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+    border-radius: 15px;
+    outline: 0;
+    border: 0;
+}
+
+.sp-google{
+    position: absolute;
+    left: 14%;
+    top: 95%;
+    height: 10%;
+    background: skyblue;
+box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+border-radius: 15px;
+border: 0;
+outline: 0;
+padding: 0.1rem;
+width: 70%;
+}
+.signup_logo1 {
+    left: 70%;
+    right: 11.11%;
+    top: 10%;
+    bottom: 16.21%;
+    width: 80%;
+    height: 95%;
+    padding-top: 5%;
+    padding-left: 15%;
+
+}
+
+.condition {
+    position: relative;
+    padding: 10px;
+    left: 12%;
+    top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .outerdiv {
+        width: 100%;
+        height: 100%;
+        /* position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; */
+    }
+    .logo {
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        top: 2.34%;
+        width: 50%;
+        height: 8%;
+    }
+
+    .brand_user {
+        position: absolute;
+        width: 22%;
+        height: 7%;
+        left: 10%;
+        top: 15%;
+    
+        background: #EBF3FF;
+        border-radius: 25px 25px 0px 0px;
+        border: none;
+        outline: none;
+        /* box-shadow: 3px 3px 4px 3px lightgray; */
+    
+    }
+
+    .influencer_user {
+        position: absolute;
+        width: 22%;
+        height: 7%;
+        left: 33%;
+        top: 15%;
+    
+        background: #EBF3FF;
+        border-radius: 25px 25px 0px 0px;
+        /* border-color: #B58BFF; */
+        border: none;
+        outline: none;
+        /* box-shadow: 3px 3px 4px 3px lightgray; */
+    
+    }
+    
+
+    .box2 {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 21%;
+        bottom: 9.67%;
+        background: #EBF3FF;
+        border-radius: 0px 25px 25px 25px;
+        box-shadow: 3px 3px 4px 3px lightgray;
+        width:80%;
+        height: 80%;
+        bottom: 10%;
+        /* margin-bottom: 10%; */
+    }
+    .form {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+    
+    }
+    
+    .column {
+        flex: 100%;
+        height: 100%;
+        width: 100%;
+    }
+    .signup_logo1{
+        display:none;
+    }
+
+    .brandname,
+    .email1,
+    .password,
+    .confirm-password,
+    .influencername {
+        position: relative;
+        background: #EBF3FF;
+        box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.7), inset 8px 8px 16px rgba(180, 193, 213, 0.7);
+        border-radius: 15px;
+        width: 85%;
+        height: 12%;
+        margin: 1rem;
+        top:5%;
+    
+    }
+    .form__input {
+        position: relative;
+        background: none;
+        width: 80%;
+        height: 70%;
+        top: 15%;
+        margin-left: 10px;
+        border: none;
+        outline: none;
+        left: 10%;
+    }
+    .form__input::-moz-focus-inner,
+    .form__input::-moz-focus-outer {
+        outline: none;
+        border: none;
+    }
+    .form__input::placeholder {
+        padding-left: 30px;
+        font-weight: bold;
+    }
+    .condition {
+        position: relative;
+        padding: 10px;
+        left: 7%;
+        top: 20px;
+    }
+    .btn-register {
+        position: absolute;
+        height: 10%;
+        width: 70%;
+        left: 10%;
+        top: 90%;
+        border-radius: 0px;
+        background: #B58BFF;
+        box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+        border-radius: 15px;
+    }
+}
