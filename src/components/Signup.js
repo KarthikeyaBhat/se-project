@@ -129,7 +129,7 @@ function SignupForm() {
                                 <textarea  id="address" className="form__input1" value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Type your address" />
                             </div>
                             <div className="sp-phone">
-                                <input type="text" id="phone" className="form__input1" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone" />
+                                <input type="phone" id="phone" className="form__input1" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone" />
                             </div>
                             <div className="password">
                                 <LockIcon className="icon1" />
