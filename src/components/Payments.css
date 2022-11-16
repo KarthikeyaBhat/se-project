@@ -1,0 +1,26 @@
+.pay-label{
+    font-family: 'Pridi', serif;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.pay-cash{
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 15%;
+    font-family: 'Pridi', serif;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+}

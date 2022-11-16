@@ -25,6 +25,7 @@ const ChomepageCard = (props)=> {
             let amount = Number(qtyOrdered)*Number(price);
             console.log(amount)
             let productArr = [];
+            let total = amount;
             productArr.push({
                 id:Math.floor((Math.random() * 100000) + 1),
                 product: name,
@@ -41,9 +42,12 @@ const ChomepageCard = (props)=> {
                     product: name,
                     quantity: qtyOrdered,
                     amount: amount});
+                total = docData.total;
+                total = total+amount;
                 updateDoc(doc(db, "orderDetails", orderId.toString()), {
                     orders: productArr,
-                    user: uid
+                    user: uid,
+                    total: total
                   });
               
 
@@ -51,7 +55,8 @@ const ChomepageCard = (props)=> {
 
                 setDoc(doc(db, "orderDetails", orderId.toString()), {
                     orders: productArr,
-                    user: uid
+                    user: uid,
+                    total: total
                   });
                 console.log('Hi');
             }

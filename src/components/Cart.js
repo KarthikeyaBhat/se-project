@@ -3,70 +3,71 @@ import './Cart.css';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { doc, setDoc, getDoc,deleteDoc } from "firebase/firestore"; 
 import {db,logout} from "../firebase";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useParams,Link } from "react-router-dom";
 const seedrandom = require('seedrandom');
 
 export default function Cart() {
     let navigate = useNavigate(); 
     const [orderDetails,setOrderDetails] = useState([])
-    const [total,setTotal] = useState(0)
-    const userid = useRef(0)
+    const [name,setName] = useState(' ')
+    const {id} = useParams()
+
     useEffect(()=>{
-        const getData = async () => {
-        const auth = getAuth();
-        const user = auth.currentUser;
+      const docData2 = window.localStorage.getItem("docData");
+      setOrderDetails(JSON.parse(docData2))
+    },[])
+
+    useEffect(()=>{
+      const getData = async ()=>{
+      const auth = await getAuth();
+    const user = auth.currentUser
         if(user!==null){
-            const uid = user.uid;
-            userid.current = uid;
-            const generator = seedrandom(`${uid}`);
-            const orderId = Math.abs(generator.int32());
-            const docRef = doc(db, "orderDetails", orderId.toString());
+            const docRef = doc(db, "orderDetails", id.toString());
             const docSnap = await getDoc(docRef);
-            if (docSnap.exists()) {
+            if (docSnap &&docSnap.exists()) {
                 let docData = docSnap.data();
-                setOrderDetails(docData.orders);
+                window.localStorage.setItem("docData",JSON.stringify(docData))
             }
-            console.log(orderDetails);
-        for (let i = 0; i < orderDetails.length; i++) {
-            setTotal(total+orderDetails[i].amount);
+        }
       }
-      return setTotal(total)
-        }
-        
-    }
-    getData();
-    }, [])
+      getData();
+    }, [orderDetails,id])
     
-        const handleLogout = async () =>{
-            let logout1 = logout;
-            const auth = getAuth();
-        const user = auth.currentUser;
-            if(user!==null){
-                const uid = user.uid;
-                const generator = seedrandom(`${uid}`);
-                const orderId = Math.abs(generator.int32());
-                console.log(orderId);
-                await deleteDoc(doc(db, "orderDetails", orderId.toString()));
-            }
-            logout1();
-            navigate('/');
-        }
+    const handleLogout = async () =>{
+      let logout1 = logout;
+      const auth = getAuth();
+      const user = auth.currentUser;
+      if(user!==null){
+          const uid = user.uid;
+          const generator = seedrandom(`${uid}`);
+          const orderId = Math.abs(generator.int32());
+          console.log(orderId);
+          await deleteDoc(doc(db, "orderDetails", orderId.toString()));
+          window.localStorage.removeItem("docData");
+
+      }
+      logout1();
+      navigate('/');
+  }
         function ClickLogo() {
             let path = `/`;
             navigate(path);
           }
+    const handlePayment = ()=>{
+      window.localStorage.removeItem("docData");
+      navigate(`/payments/${id}`)
+    }
   return (
     <>
             <div className='b1-upper'>
                 <h1 className="b1-logo" onClick={ClickLogo}>Wave Delivery</h1>
                 <button className='logout1' onClick={handleLogout}>Logout</button>
-                <button className='Gtc'>Go to cart</button>
             </div>
         <div className="d-flex justify-content-center ctable">
-<table className="table table-striped w-75">
+<table className="table table-striped w-75 table-bordered">
     <thead>
-      <tr>
-        <th>Order Id: {Math.abs(seedrandom(userid).int32())}</th>
+      <tr style={{backgroundColor: "darkorange"}}>
+        <th colSpan={9}>Order Id: {id}</th>
       </tr>
       <tr>
         <th scope="col" colSpan={3}>Name</th>
@@ -75,20 +76,27 @@ export default function Cart() {
       </tr>
     </thead>
     <tbody>
-        {orderDetails.map(task => {
+        {orderDetails["orders"] && orderDetails["orders"].map(task => {
             return (
               <tr>
                 <td colSpan={3}>{task.product}</td>
                 <td colSpan={3}>{task.quantity}</td>
-                <td colSpan={3}>{task.amount}</td>
+                <td colSpan={3}>Rs. {task.amount}</td>
               </tr>
             );
           })}
-        <tr>
-        <td colSpan={3}>{total}</td>
+        <tr className="bg-dark text-white">
+        <td colSpan={6}>Total</td>
+        <td colSpan={3}>Rs. {orderDetails["total"]}</td>
         </tr>
+        
     </tbody>
   </table>
+  <Link to={`/chomepage`}>
+  <button className='ca-Gtc'>Add more items</button>
+  </Link>
+  <button className='ca-Gtp bg-success' onClick={handlePayment}>Make payment</button>
+  
     </div>
     </>
   )

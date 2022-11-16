@@ -1,5 +1,32 @@
 .ctable{
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 25%;
+    width: 50%;
+}
+
+.ca-Gtc {
+    position: absolute;
+    left: 32%;
+    top: 110%;
+    background-color: darkorange;
+    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+    color: black;
+    border: 0;
+    outline: 0;
+    padding: 0.75rem;
+    width: 35%;
+    cursor: pointer;
+}
+.ca-Gtp {
+    position: absolute;
+    left: 32%;
+    top: 135%;
+    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #C8B4D5;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 0.75rem;
+    width: 35%;
+    cursor: pointer;
 }

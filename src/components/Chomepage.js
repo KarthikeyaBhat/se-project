@@ -1,8 +1,8 @@
-import React, { useState, setState } from 'react'
+import React, { useState, setState,useEffect } from 'react'
 import './Chomepage.css'
 import CCard from './ChomepageCard.js'
 import Products from '../sampleJSON/products.json'
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import {Pagination,Navigation} from 'swiper';
 import SwiperCore, { Keyboard, Mousewheel } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,10 +21,27 @@ export default function Chomepage() {
     let dairy = Products['dairy_products'];
     let sweets = Products['Chocolates_and_sweets'];
     let munchies = Products['Munchies'];
+    const [oid,setOid] = useState(0)
     /* const [query, setQuery] = useState("");
     function handleInputChange(e) {
         setQuery(e.target.value)
     } */
+    useEffect(()=>{
+      const ordId = window.localStorage.getItem("OrdId");
+      setOid(JSON.parse(ordId));
+    },[])
+
+    useEffect(()=>{
+        const auth = getAuth();
+        const user = auth.currentUser;
+        if(user!==null){
+        const uid = user.uid;
+        const generator = seedrandom(`${uid}`);
+        const orid = Math.abs(generator.int32());
+        window.localStorage.setItem("OrdId",JSON.stringify(orid))
+        }
+      
+    },[oid])
     function ClickLogo() {
         let path = `/`;
         navigate(path);
@@ -43,12 +60,16 @@ export default function Chomepage() {
         logout1();
         navigate('/');
     }
+
     return (
         <>
             <div className='b1-upper'>
                 <h1 className="b1-logo" onClick={ClickLogo}>Wave Delivery</h1>
                 <button className='logout1' onClick={handleLogout}>Logout</button>
+                <Link to={`/cart/${oid}`}>
                 <button className='Gtc'>Go to cart</button>
+                </Link>
+                
             </div>
             <p className="vi-p1">Fruits and vegetables</p>
             <div className="vi-rp">

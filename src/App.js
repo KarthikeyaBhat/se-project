@@ -8,6 +8,8 @@ import Chomepage from "./components/Chomepage";
 import Cart from "./components/Cart";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Payments from "./components/Payments";
+import AddCard from "./components/AddCard";
 function App(){
   return(
   <div className="App">
@@ -19,7 +21,9 @@ function App(){
         <Route exact path="/signup" element={<SignupForm />} />
         <Route exact path="/chomepagecard" element={<ChomepageCard />} />
         <Route exact path="/chomepage" element={<Chomepage />} />
-        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/cart/:id" element={<Cart />} />
+        <Route exact path="/payments/:id" element={<Payments />} />
+        <Route exact path="/add-card/:id" element={<AddCard />} />
         </Routes>
       </BrowserRouter>
     </div>
